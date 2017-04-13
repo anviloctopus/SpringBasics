@@ -1,0 +1,28 @@
+<html>
+<head>
+
+</head>
+<body>
+
+Hello, {{name}}!
+<form action="/" method="post">
+    <h1 class="starting">WHAT THE F%*K YOU GOT TO SAY?</h1>
+</form>
+<form action="/create-message" method="post">
+    <input type="text" placeholder="say what" name="message"/>
+    <button type="submit">Submit</button>
+
+    <ol>
+        {{#messages}}
+        <li>{{textMess}}</li>
+        {{/messages}}
+    </ol>
+
+</form>
+
+</body>
+</html>
+
+
+
+
